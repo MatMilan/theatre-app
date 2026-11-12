@@ -921,7 +921,7 @@ textarea:focus { border-color: var(--gold-dim); outline: none; }
    ============================================================ */
 
 @media print {
-  @page { size: A4 portrait; margin: 10mm; }
+  @page { size: A4 portrait; margin: 16mm; }
 
   * {
     -webkit-print-color-adjust: exact;
@@ -934,7 +934,8 @@ textarea:focus { border-color: var(--gold-dim); outline: none; }
     background: #fff !important;
     color: #111;
   }
-
+  body { padding-bottom: 16mm; }
+   
   #toolbar, #sidebar, #statusbar, #tooltip, #toasts,
   .modal-backdrop, .side-hint { display: none !important; }
 
@@ -1018,18 +1019,20 @@ textarea:focus { border-color: var(--gold-dim); outline: none; }
   .chip-name { color: #111; }
   .chip-count { color: #444; background: none; border: 0.3mm solid #aaa; }
   
-  /* Подвал с логотипом — внизу печатной страницы, без фона */
+  /* Футер с логотипом — фиксированно в самом низу страницы */
   #creditFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: none !important;
     background-color: transparent !important;
     border-top: 0.4mm solid #999;
-    margin-top: 5mm;
-    padding-top: 3mm;
+    margin: 0;
+    padding: 2mm 0 0;
     justify-content: center;
-    break-inside: avoid;
-    page-break-inside: avoid;
   }
-  #creditFooter .credit-logo { height: 7mm; }
+  #creditFooter .credit-logo { height: 6mm; }
   #creditFooter .credit-text { color: #222 !important; font-size: 9pt; }
 }
 
