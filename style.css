@@ -1018,9 +1018,10 @@ textarea:focus { border-color: var(--gold-dim); outline: none; }
   .chip-name { color: #111; }
   .chip-count { color: #444; background: none; border: 0.3mm solid #aaa; }
   
-  /* Подвал с логотипом — внизу печатной страницы */
+  /* Подвал с логотипом — внизу печатной страницы, без фона */
   #creditFooter {
-    background: none;
+    background: none !important;
+    background-color: transparent !important;
     border-top: 0.4mm solid #999;
     margin-top: 5mm;
     padding-top: 3mm;
@@ -1029,8 +1030,7 @@ textarea:focus { border-color: var(--gold-dim); outline: none; }
     page-break-inside: avoid;
   }
   #creditFooter .credit-logo { height: 7mm; }
-  #creditFooter .credit-text { color: #333; font-size: 9pt; }
-}
+  #creditFooter .credit-text { color: #222 !important; font-size: 9pt; }
 
 /* ===== План с боковыми зонами ===== */
 .plan-grid {
