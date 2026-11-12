@@ -1826,6 +1826,7 @@ function wireToolbar() {
   $('#btnPrint').addEventListener('click', cmdPrint);
   $('#btnClearSeats').addEventListener('click', cmdClearSeats);
   $('#hallSelect').addEventListener('change', onHallChange);
+  $('#btnHelp').addEventListener('click', () => window.open('help.html', '_blank'));
   $('#btnMode').addEventListener('click', () => setMode(state.mode === 'edit' ? 'view' : 'edit'));
 
   $('#fileInput').addEventListener('change', (e) => {
