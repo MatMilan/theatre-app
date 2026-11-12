@@ -1031,6 +1031,7 @@ textarea:focus { border-color: var(--gold-dim); outline: none; }
   }
   #creditFooter .credit-logo { height: 7mm; }
   #creditFooter .credit-text { color: #222 !important; font-size: 9pt; }
+}
 
 /* ===== План с боковыми зонами ===== */
 .plan-grid {
